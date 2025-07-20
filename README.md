@@ -2,10 +2,13 @@
 
 Este proyecto provee una demostración sencilla para aumentar la resolución de imágenes utilizando modelos ONNX directamente en el navegador. Todo el código es estático y puede desplegarse en GitHub Pages sin dependencias adicionales.
 
-## Uso
-1. Abrir `index.html` desde GitHub Pages o un servidor estático.
-2. Seleccionar una imagen y un modelo.
-3. Pulsar **Upscale** para procesar la imagen.
-4. Descargar el resultado en formato PNG si se desea.
+Los modelos se almacenan localmente en la carpeta `model/`. Para actualizar la lista de modelos basta con ejecutar `generate_models.py`, que generará el archivo `models.json` utilizado por la interfaz web.
 
-Los modelos disponibles se definen en `models.json` y se descargan dinámicamente desde sus URLs.
+## Uso
+1. Ejecuta `python generate_models.py` para actualizar `models.json` con los modelos presentes en la carpeta `model/`.
+2. Abre `index.html` desde GitHub Pages o cualquier servidor estático.
+3. Selecciona una imagen y el modelo deseado.
+4. Pulsa **Upscale** para procesar la imagen.
+5. Descarga el resultado en formato PNG si lo necesitas.
+
+Los modelos se cargan localmente desde la carpeta `model/` gracias al archivo `models.json` generado.
