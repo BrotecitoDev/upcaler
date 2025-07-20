@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Upscaler IA</title>
+<!-- ONNX Runtime Web -->
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+<style>
+body {font-family: Arial, sans-serif; margin: 20px;}
+#preview-area {display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;}
+canvas {border: 1px solid #ccc; max-width: 100%; height: auto;}
+button {margin-right: 10px;}
+.hidden {display: none;}
+</style>
+</head>
+<body>
+<h1>Upscaler IA en el Navegador</h1>
+<input type="file" id="fileInput" accept="image/*">
+<select id="modelSelect"></select>
+<button id="upscaleBtn">Upscale</button>
+<button id="downloadBtn" disabled>Descargar</button>
+<span id="progress" class="hidden">Procesando...</span>
+<p id="message"></p>
+<div id="preview-area">
+<canvas id="inputCanvas"></canvas>
+<canvas id="outputCanvas"></canvas>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
