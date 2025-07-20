@@ -1,0 +1,4 @@
+{
+  "AnimeSharp 2x": "https://github.com/Kim2091/Kim2091-Models/releases/download/2x-AnimeSharpV4/2x-AnimeSharpV4_RCAN_fp16_op17.onnx",
+  "AnimeSharp 4x": "https://github.com/Kim2091/Kim2091-Models/releases/download/4x-AnimeSharpV4/4x-AnimeSharpV4_RCAN_fp16_op17.onnx"
+}
